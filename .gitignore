@@ -1,0 +1,25 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Extracted temporary files
+extracted_assets/

@@ -1,0 +1,267 @@
+[
+  {
+    "id": "blush-french-elegance",
+    "name": "Blush French Elegance",
+    "category": "french-tips",
+    "categoryLabel": "French Tips",
+    "price": 1299,
+    "rating": 5,
+    "reviewsCount": 38,
+    "badge": "bestseller",
+    "badgeText": "Best Seller",
+    "image": "assets/images/prod_blush_french_hd.png",
+    "gallery": [
+      "assets/images/prod_blush_french_hd.png",
+      "assets/images/hero_nails_hd.png",
+      "assets/images/packaging_box_hd.png"
+    ],
+    "description": "Soft blush tones meet classic French tips in a design that feels effortlessly elegant. Perfect for brunch dates, celebrations, or adding a polished touch to your everyday look.",
+    "shapes": [
+      "Almond",
+      "Oval",
+      "Coffin",
+      "Square"
+    ],
+    "finishes": [
+      "Glossy",
+      "Matte"
+    ],
+    "defaultShape": "Almond",
+    "defaultFinish": "Glossy",
+    "tags": [
+      "french-tips",
+      "minimal-nude",
+      "best-sellers"
+    ]
+  },
+  {
+    "id": "blush-dream",
+    "name": "Blush Dream",
+    "category": "minimal-nude",
+    "categoryLabel": "Minimal & Nude",
+    "price": 1299,
+    "rating": 4.9,
+    "reviewsCount": 42,
+    "badge": "bestseller",
+    "badgeText": "Best Seller",
+    "image": "assets/images/prod_blush_dream_hd.png",
+    "gallery": [
+      "assets/images/prod_blush_dream_hd.png",
+      "assets/images/cat_everyday_hd.png",
+      "assets/images/packaging_box_hd.png"
+    ],
+    "description": "Understated luxury with delicate milky blush tones and a glass-like sheen that complements every skin tone.",
+    "shapes": [
+      "Almond",
+      "Oval",
+      "Square"
+    ],
+    "finishes": [
+      "Glossy"
+    ],
+    "defaultShape": "Almond",
+    "defaultFinish": "Glossy",
+    "tags": [
+      "minimal-nude",
+      "everyday-elegance",
+      "best-sellers"
+    ]
+  },
+  {
+    "id": "lavender-bloom",
+    "name": "Lavender Bloom",
+    "category": "floral-artistic",
+    "categoryLabel": "Floral & Artistic",
+    "price": 1349,
+    "rating": 5,
+    "reviewsCount": 29,
+    "badge": "new",
+    "badgeText": "New Arrival",
+    "image": "assets/images/prod_lavender_bloom_hd.png",
+    "gallery": [
+      "assets/images/prod_lavender_bloom_hd.png",
+      "assets/images/prod_lavender_art.jpg",
+      "assets/images/packaging_box_hd.png"
+    ],
+    "description": "Hand-painted delicate botanical florals and soft lilac hues with micro-pearl accents for an ethereal aura.",
+    "shapes": [
+      "Almond",
+      "Coffin",
+      "Stiletto"
+    ],
+    "finishes": [
+      "Glossy",
+      "Matte"
+    ],
+    "defaultShape": "Almond",
+    "defaultFinish": "Glossy",
+    "tags": [
+      "floral-artistic",
+      "new-arrivals"
+    ]
+  },
+  {
+    "id": "golden-hour",
+    "name": "Golden Hour",
+    "category": "glitter-glam",
+    "categoryLabel": "Glitter & Glam",
+    "price": 1399,
+    "rating": 4.9,
+    "reviewsCount": 54,
+    "badge": "bestseller",
+    "badgeText": "Trending",
+    "image": "assets/images/prod_golden_hour_hd.png",
+    "gallery": [
+      "assets/images/prod_golden_hour_hd.png",
+      "assets/images/prod_golden_chrome.jpg",
+      "assets/images/packaging_box_hd.png"
+    ],
+    "description": "Capturing sunset radiance with fine spun champagne shimmer, gilded leaf edges, and multifaceted sparkle.",
+    "shapes": [
+      "Almond",
+      "Coffin",
+      "Stiletto"
+    ],
+    "finishes": [
+      "Glossy"
+    ],
+    "defaultShape": "Coffin",
+    "defaultFinish": "Glossy",
+    "tags": [
+      "glitter-glam",
+      "special-occasions",
+      "best-sellers"
+    ]
+  },
+  {
+    "id": "wild-hearts",
+    "name": "Wild Hearts",
+    "category": "floral-artistic",
+    "categoryLabel": "Artisan Nail Art",
+    "price": 1299,
+    "rating": 4.8,
+    "reviewsCount": 31,
+    "badge": "trending",
+    "badgeText": "Trending",
+    "image": "assets/images/prod_wild_hearts_hd.png",
+    "gallery": [
+      "assets/images/prod_wild_hearts_hd.png",
+      "assets/images/prod_wild_art.jpg",
+      "assets/images/packaging_box_hd.png"
+    ],
+    "description": "Contrasting moody noir accents with romantic hand-drawn micro heart motifs for effortless edgy charm.",
+    "shapes": [
+      "Almond",
+      "Square",
+      "Coffin"
+    ],
+    "finishes": [
+      "Glossy",
+      "Matte"
+    ],
+    "defaultShape": "Almond",
+    "defaultFinish": "Glossy",
+    "tags": [
+      "floral-artistic",
+      "artisan-nail-art"
+    ]
+  },
+  {
+    "id": "rose-quartz-shimmer",
+    "name": "Rose Quartz Shimmer",
+    "category": "glitter-glam",
+    "categoryLabel": "Glitter & Glam",
+    "price": 1449,
+    "rating": 5,
+    "reviewsCount": 26,
+    "badge": "new",
+    "badgeText": "New Arrival",
+    "image": "assets/images/prod_rose_quartz.jpg",
+    "gallery": [
+      "assets/images/prod_rose_quartz.jpg",
+      "assets/images/hero_nails_hd.png",
+      "assets/images/packaging_box_hd.png"
+    ],
+    "description": "Inspired by healing rose quartz crystals with delicate marble veins and fine iridescent golden glitter.",
+    "shapes": [
+      "Almond",
+      "Coffin",
+      "Oval"
+    ],
+    "finishes": [
+      "Glossy"
+    ],
+    "defaultShape": "Almond",
+    "defaultFinish": "Glossy",
+    "tags": [
+      "glitter-glam",
+      "new-arrivals",
+      "special-occasions"
+    ]
+  },
+  {
+    "id": "velvet-mocha-chrome",
+    "name": "Velvet Mocha Chrome",
+    "category": "minimal-nude",
+    "categoryLabel": "Minimal & Nude",
+    "price": 1399,
+    "rating": 4.9,
+    "reviewsCount": 37,
+    "badge": null,
+    "badgeText": null,
+    "image": "assets/images/prod_velvet_mocha.jpg",
+    "gallery": [
+      "assets/images/prod_velvet_mocha.jpg",
+      "assets/images/cat_everyday_hd.png",
+      "assets/images/packaging_box_hd.png"
+    ],
+    "description": "Ultra-luxurious rich espresso and warm caramel chrome with a deep magnetic optical luster.",
+    "shapes": [
+      "Almond",
+      "Square",
+      "Coffin"
+    ],
+    "finishes": [
+      "Glossy"
+    ],
+    "defaultShape": "Square",
+    "defaultFinish": "Glossy",
+    "tags": [
+      "minimal-nude",
+      "everyday-elegance"
+    ]
+  },
+  {
+    "id": "ivory-pearl-glaze",
+    "name": "Ivory Pearl Glaze",
+    "category": "bridal-occasion",
+    "categoryLabel": "Bridal & Occasion",
+    "price": 1499,
+    "rating": 5,
+    "reviewsCount": 48,
+    "badge": "bestseller",
+    "badgeText": "Bridal Pick",
+    "image": "assets/images/prod_pearl_bridal.jpg",
+    "gallery": [
+      "assets/images/prod_pearl_bridal.jpg",
+      "assets/images/top_hands_hd.png",
+      "assets/images/packaging_box_hd.png"
+    ],
+    "description": "The pinnacle of bridal opulence: sheer glazed doughnut finish, hand-set Austrian micro-pearls, and soft aura contours.",
+    "shapes": [
+      "Almond",
+      "Oval",
+      "Coffin"
+    ],
+    "finishes": [
+      "Glossy"
+    ],
+    "defaultShape": "Almond",
+    "defaultFinish": "Glossy",
+    "tags": [
+      "bridal-occasion",
+      "special-occasions",
+      "best-sellers"
+    ]
+  }
+]
