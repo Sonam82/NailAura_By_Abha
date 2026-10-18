@@ -7,10 +7,10 @@ const catalog=JSON.parse(fs.readFileSync('assets/products.json','utf8')).map((p,
 function boot(page,storage={},query=''){
  const els=new Map(),events={},windowEvents={};
  const element=()=>({innerHTML:'',textContent:'',hidden:false,disabled:false,value:'',dataset:{},handlers:{},classList:{add(){},remove(){}},setAttribute(){},addEventListener(n,f){this.handlers[n]=f;},focus(){}});
- for(const sel of ['#toast',...({'cart':['#cart-content'],'wishlist':['#wishlist-grid'],'checkout':['#checkout-summary','#download-bag'],'shop':['#shop-grid','#search','#sort','#result-count'],'product':['#product-detail']}[page]||[])])els.set(sel,element());
+ for(const sel of ['#toast',...({'cart':['#cart-content','#undo-removal','#undo-remove'],'wishlist':['#wishlist-grid'],'checkout':['#checkout-summary','#download-bag'],'shop':['#shop-grid','#search','#sort','#result-count','#reset-filters'],'product':['#product-detail']}[page]||[])])els.set(sel,element());
  if(els.has('#sort'))els.get('#sort').value='featured';
  const doc={querySelector:s=>els.get(s)||null,querySelectorAll:()=>[],addEventListener:(n,f)=>events[n]=f};
- const context={window:{NAIL_PRODUCTS:catalog,NailStore:S,addEventListener:(n,f)=>windowEvents[n]=f},document:doc,localStorage:{getItem:k=>storage[k]||null,setItem:(k,v)=>storage[k]=v},URLSearchParams,URL,location:{search:query},setTimeout:()=>1,clearTimeout(){},console};
+ const context={window:{NAIL_PRODUCTS:catalog,NailStore:S,addEventListener:(n,f)=>windowEvents[n]=f},document:doc,localStorage:{getItem:k=>storage[k]||null,setItem:(k,v)=>storage[k]=v},URLSearchParams,URL,location:{search:query,href:'http://localhost/shop.html'+query},history:{replaceState(){}},setTimeout:()=>1,clearTimeout(){},console};
  vm.runInNewContext(fs.readFileSync('assets/js/app.js','utf8'),context);
  return {els,events,windowEvents,storage};
 }
@@ -40,4 +40,20 @@ test('shop search updates results and has a recovery link',()=>{
 });
 test('unknown product gives recovery instead of wrong product',()=>{
  const {els}=boot('product',{},'?id=unknown');assert.match(els.get('#product-detail').innerHTML,/This design has slipped away/);
+});
+test('shop restores sorting from URL and resets in place',()=>{
+ const {els}=boot('shop',{},'?q=lavender&sort=price-desc');
+ assert.equal(els.get('#sort').value,'price-desc');
+ els.get('#reset-filters').handlers.click();
+ assert.equal(els.get('#search').value,'');
+ assert.equal(els.get('#sort').value,'featured');
+ assert.match(els.get('#result-count').textContent,/8 designs/);
+});
+test('removed bag item can be restored with its selected options',()=>{
+ const state=boot('cart',{nailaura_cart:JSON.stringify([line])});
+ state.events.click({target:{closest:s=>s==='[data-remove]'?{dataset:{remove:'0'}}:null}});
+ assert.equal(JSON.parse(state.storage.nailaura_cart).length,0);
+ state.els.get('#undo-remove').handlers.click();
+ assert.equal(JSON.parse(state.storage.nailaura_cart)[0].size,'M');
+ assert.match(state.els.get('#cart-content').innerHTML,/1,448/);
 });

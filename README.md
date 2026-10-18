@@ -24,7 +24,7 @@ Then open `http://localhost:8000` in your browser. The site also functions direc
 ## Automated Checks & Validation
 
 ```bash
-node --test tests/store.test.cjs tests/pages.test.cjs
+node --test tests/store.test.cjs tests/pages.test.cjs tests/interactions.test.cjs
 node --check assets/js/app.js
 python scripts/check_site.py
 ```
@@ -36,3 +36,5 @@ Tests cover price calculations, free shipping threshold calculations, stored dat
 The shopping experience maintains client-side cart and wishlist state via `localStorage`. For production launch, connect your live payment gateway (e.g. Razorpay / UPI), shipping carrier API (e.g. Shiprocket), and business WhatsApp API (+91 98765 43210).
 
 Generated image assets and contact sheets are documented in `docs/redesign-plan.md`. The original archive is preserved in `docs/before-redesign.zip`.
+
+Motion and shopping UX refinements are described in `docs/ux-improvements.md`. Effects live in `assets/js/interactions.js` and respect the system reduced-motion preference. Tests use mocked DOM objects; real-browser visual and accessibility verification remains outstanding because no browser was connected during this update.
